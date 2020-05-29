@@ -1,9 +1,12 @@
 using System.Collections.Generic;
 
-public class RatioComparer : IComparer<Item>
+namespace Fractional_Knapsack
 {
-    public int Compare(Item x, Item y)
+    public class RatioComparer : IComparer<Item>
     {
-        return x.Ratio < y.Ratio ? 1 : x.Ratio == y.Ratio ? 0 : -1;
+        public int Compare(Item x, Item y)
+        {
+            return x.Ratio < y.Ratio ? 1 : x.Ratio == y.Ratio ? 0 : -1;
+        }
     }
 }

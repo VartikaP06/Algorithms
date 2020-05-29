@@ -1,8 +1,11 @@
-public class Item
+namespace Fractional_Knapsack
 {
-    public int Weight { get; set; }
-    
-    public int Value { get; set; }
+    public class Item
+    {
+        public int Weight { get; set; }
+        
+        public int Value { get; set; }
 
-    public double Ratio { get; set; }
+        public double Ratio { get; set; }
+    }
 }

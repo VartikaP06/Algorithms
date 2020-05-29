@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Activity_Selection
+﻿namespace Activity_Selection
 {
     class Program
     {
