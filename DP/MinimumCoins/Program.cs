@@ -6,8 +6,8 @@ namespace MinimumCoins
     {
         static void Main(string[] args)
         {
-            var coins = new [] { 26, 10, 6 };
-            var val = 39;
+            var coins = new [] { 25, 10, 5 };
+            var val = 40;
 
             var minCoins = new MinimumCoins().MinCoins(coins, coins.Length, val);
             if (minCoins == -1)

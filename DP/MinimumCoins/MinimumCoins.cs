@@ -6,10 +6,11 @@ namespace MinimumCoins
     {
         public int MinCoins(int[] coins, int n, int val)
         {
-            var dp = InitialiseDp(val);
+            var dp = new int[val+1];
 
             for (int i = 1; i <= val; i++)
             {
+                dp[i] = int.MaxValue;
                 for (int j = 0; j < n; j++)
                 {
                     if (coins[j] <= i)
@@ -24,17 +25,6 @@ namespace MinimumCoins
             }
 
             return dp[val] != int.MaxValue ? dp[val] : -1;
-        }
-
-        private int[] InitialiseDp(int val)
-        {
-            var dp = new int[val+1];
-            for (int i = 1; i <= val; i++)
-            {
-                dp[i] = int.MaxValue;
-            }
-
-            return dp;
         }
     }
 }
